@@ -1,0 +1,12 @@
+{
+  "name": "stayview-workshop-mcp",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "postinstall": "node -e \"console.log('StayView workshop MCP servers ready')\""
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0"
+  }
+}

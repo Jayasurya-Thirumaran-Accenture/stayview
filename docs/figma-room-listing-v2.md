@@ -1,6 +1,6 @@
 # Figma Design Reference — Room Listing V2
 
-> **Note to workshop participants:** In a real workflow, this would be an actual Figma file or screenshot. For this workshop, this markdown describes the design spec so Cursor can reference it via `@file`.
+> **Workshop note:** Fetch design via **workshop-figma MCP** — `figma_get_frame_spec` with `fileKey: stayview-room-listing-v2`, `frameId: room-listing-v2`. This markdown is the backing spec returned by that tool (production would use the Figma cloud MCP).
 
 ## Layout Spec
 

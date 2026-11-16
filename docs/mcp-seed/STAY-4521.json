@@ -1,0 +1,42 @@
+{
+  "key": "STAY-4521",
+  "legacyKey": "JIRA-4521",
+  "type": "Story",
+  "priority": "High",
+  "sprint": "Sprint 24 — Q4 Refresh",
+  "assignee": "Workshop Participant",
+  "reporter": "Sarah Chen, Product Manager",
+  "epic": "Guest Experience Modernization",
+  "summary": "Redesign the Room Listing page (/rooms) to match the updated Figma design",
+  "description": "The new layout introduces a card grid with larger imagery, an enhanced filter experience with amenity-based filtering, and visual indicators for loyalty point earnings. The redesign must be gated behind feature flag room-listing-v2 so the existing page remains available as a fallback.",
+  "acceptanceCriteria": [
+    "AC-1: New room cards display larger hero images (16:9) with gradient overlay showing room name and starting price",
+    "AC-2: Each card shows amenity icon row (max 5 icons) instead of text badges",
+    "AC-3: Amenities multi-select filter on FilterBar (ocean-view, pet-friendly, spa, etc.)",
+    "AC-4: Loyalty points badge Earn ~{points} points where points = pricePerNight * 10",
+    "AC-5: Sold out rooms show muted card with waitlist CTA instead of hiding",
+    "AC-6: Redesign behind feature flag room-listing-v2 using isFeatureEnabled()",
+    "AC-7: Existing analytics continue; add room_listing_amenity_filter_click, room_listing_loyalty_badge_hover, room_listing_waitlist_click",
+    "AC-8: E2E tests green for V1; new E2E for V2 behind flag",
+    "AC-9: Unit tests for RoomCardV2, amenity filter, loyalty math, feature flag toggle",
+    "AC-10: No CWV regression (LCP < 2.5s, CLS < 0.1, INP < 200ms)"
+  ],
+  "designLink": {
+    "provider": "figma",
+    "fileKey": "stayview-room-listing-v2",
+    "frameId": "room-listing-v2",
+    "frameName": "Room Listing Page V2"
+  },
+  "technicalNotes": [
+    "Add room-listing-v2 to lib/feature-flags.ts",
+    "Reuse StarRating and PriceTag",
+    "Create components/RoomCardV2.tsx — do not modify RoomCard",
+    "Extend filterRooms() in lib/rooms.ts for amenities",
+    "Analytics: {page}_{element}_{action}"
+  ],
+  "outOfScope": [
+    "Room Detail redesign (STAY-4522)",
+    "Backend API changes",
+    "Mobile-only bespoke layouts"
+  ]
+}

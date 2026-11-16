@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "workshop-jira": {
+      "command": "node",
+      "args": ["${workspaceFolder}/mcp/jira-server.mjs"]
+    },
+    "workshop-figma": {
+      "command": "node",
+      "args": ["${workspaceFolder}/mcp/figma-server.mjs"]
+    }
+  }
+}

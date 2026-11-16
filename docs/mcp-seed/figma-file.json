@@ -1,0 +1,13 @@
+{
+  "fileKey": "stayview-room-listing-v2",
+  "name": "StayView — Guest Experience / Room Listing",
+  "lastModified": "2026-11-01",
+  "frames": [
+    {
+      "id": "room-listing-v2",
+      "name": "Room Listing Page V2",
+      "description": "Primary handoff frame for STAY-4521",
+      "specPath": "docs/figma-room-listing-v2.md"
+    }
+  ]
+}
