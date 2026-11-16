@@ -4,7 +4,7 @@ globs: ["app/**/*.tsx", "components/**/*.tsx", "docs/**/*.md"]
 alwaysApply: true
 ---
 
-- Read @file docs/workshop-config.json for jiraIssueKey and figmaDesignUrl.
+- Read @file docs/workshop-config.json for the instructor-provided jiraIssueKey and figmaDesignUrl (participants do not create new Jira/Figma assets).
 - For requirements, use Atlassian MCP to retrieve that Jira issue before planning or implementing.
 - For design, use Figma MCP (e.g. get_design_context) for figmaDesignUrl before UI implementation or visual validation.
 - Do not use local markdown files as the source of truth for story or design; Jira and Figma MCP are required.
