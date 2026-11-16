@@ -1,10 +1,11 @@
 ---
-description: Jira and Figma requirements must be loaded via MCP tools, not only static files
+description: Fetch Jira and Figma via cloud MCP using workshop-config before planning or implementing
 globs: ["app/**/*.tsx", "components/**/*.tsx", "docs/**/*.md"]
 alwaysApply: true
 ---
 
-- For story requirements, call workshop-jira MCP `jira_get_issue` with issue key STAY-4521 (alias JIRA-4521) before planning or implementing.
-- For design specs, call workshop-figma MCP `figma_get_frame_spec` with fileKey `stayview-room-listing-v2` and frameId `room-listing-v2`.
-- Treat MCP output as the source of truth for acceptance criteria and design tokens; use @file only for in-repo code and baselines (e.g. cwv-baseline.json).
-- In the completion report, note which MCP tools were used to fetch Jira and Figma context.
+- Read @file docs/workshop-config.json for jiraIssueKey and figmaDesignUrl.
+- For requirements, use Atlassian MCP to retrieve that Jira issue before planning or implementing.
+- For design, use Figma MCP (e.g. get_design_context) for figmaDesignUrl before UI implementation or visual validation.
+- Do not treat docs/JIRA-4521.md or docs/figma-room-listing-v2.md as source of truth when cloud MCP is available; they are setup templates only.
+- Report in docs/REPORT-4521.md which MCP tools were used and the config keys referenced.

@@ -1,6 +1,6 @@
 # Figma Design Reference — Room Listing V2
 
-> **Workshop note:** Fetch design via **workshop-figma MCP** — `figma_get_frame_spec` with `fileKey: stayview-room-listing-v2`, `frameId: room-listing-v2`. This markdown is the backing spec returned by that tool (production would use the Figma cloud MCP).
+> **Build guide:** Recreate this spec as a **real Figma frame**, then set `figmaDesignUrl` in `docs/workshop-config.json`. The lab fetches design via **Figma MCP** (`get_design_context` on that URL). This markdown is the instructor checklist, not runtime source of truth.
 
 ## Layout Spec
 

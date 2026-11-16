@@ -1,12 +1,10 @@
 {
   "mcpServers": {
-    "workshop-jira": {
-      "command": "node",
-      "args": ["${workspaceFolder}/mcp/jira-server.mjs"]
+    "atlassian": {
+      "url": "https://mcp.atlassian.com/v2/mcp"
     },
-    "workshop-figma": {
-      "command": "node",
-      "args": ["${workspaceFolder}/mcp/figma-server.mjs"]
+    "figma": {
+      "url": "https://mcp.figma.com/mcp"
     }
   }
 }

@@ -1,0 +1,8 @@
+{
+  "jiraIssueKey": "STAY-4521",
+  "jiraProjectKey": "STAY",
+  "figmaDesignUrl": "https://www.figma.com/design/YOUR_FILE_KEY/StayView-Room-Listing?node-id=YOUR_NODE_ID",
+  "figmaFrameName": "Room Listing Page V2",
+  "featureFlagKey": "room-listing-v2",
+  "notes": "Replace YOUR_* with real values from your Jira and Figma before Module 1. See docs/CREATE-JIRA-AND-FIGMA.md"
+}

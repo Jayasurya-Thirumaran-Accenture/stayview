@@ -22,6 +22,9 @@ dist/
 .env
 .env*.local
 
+# Per-team Jira/Figma pointers (use workshop-config.example.json as template)
+docs/workshop-config.local.json
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
