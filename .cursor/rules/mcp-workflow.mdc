@@ -7,5 +7,5 @@ alwaysApply: true
 - Read @file docs/workshop-config.json for jiraIssueKey and figmaDesignUrl.
 - For requirements, use Atlassian MCP to retrieve that Jira issue before planning or implementing.
 - For design, use Figma MCP (e.g. get_design_context) for figmaDesignUrl before UI implementation or visual validation.
-- Do not treat docs/JIRA-4521.md or docs/figma-room-listing-v2.md as source of truth when cloud MCP is available; they are setup templates only.
+- Do not use local markdown files as the source of truth for story or design; Jira and Figma MCP are required.
 - Report in docs/REPORT-4521.md which MCP tools were used and the config keys referenced.
