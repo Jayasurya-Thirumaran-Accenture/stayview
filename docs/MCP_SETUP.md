@@ -31,7 +31,7 @@ Open the **`stayview`** folder as the Cursor workspace.
 3. **Connect** → Atlassian OAuth → select site with the workshop project → **Allow**
 4. Smoke test:
    ```
-   @file docs/workshop-config.json
+   @docs/workshop-config.json
    Using Atlassian MCP, retrieve the Jira issue in jiraIssueKey and return its summary and description.
    ```
 
@@ -49,17 +49,17 @@ Open the **`stayview`** folder as the Cursor workspace.
 ## 4. Verify before Module 1
 
 ```
-@file docs/workshop-config.json
+@docs/workshop-config.json
 Using Atlassian MCP, retrieve the Jira issue named in jiraIssueKey and summarize acceptance criteria.
 ```
 
 ```
-@file docs/workshop-config.json
-Using Figma MCP, get design context for figmaDesignUrl. Summarize differences vs @file components/RoomCard.tsx.
+@docs/workshop-config.json
+Using Figma MCP, get design context for figmaDesignUrl. Summarize differences vs @components/RoomCard.tsx.
 ```
 
 If MCP returns “not found” or access denied, ask the instructor to confirm your **Jira/Figma permissions** — not the config file.
 
 ## 5. Prompting pattern
 
-Include **`@file docs/workshop-config.json`** in discovery/plan prompts. Requirements and design come from **Atlassian + Figma MCP**, not from creating new tickets in class.
+Start discovery/plan prompts with **`@docs/workshop-config.json`**, then fetch via **Atlassian + Figma MCP**. Requirements and design do not come from creating new tickets in class.
