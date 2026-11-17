@@ -29,10 +29,10 @@ const BED_TYPES: { value: BedType | ""; label: string }[] = [
 
 const PRICE_RANGES = [
   { value: "", label: "Any Price" },
-  { value: "0-200", label: "Under $200" },
-  { value: "200-400", label: "$200 - $400" },
-  { value: "400-600", label: "$400 - $600" },
-  { value: "600-9999", label: "$600+" },
+  { value: "3000-3500", label: "Under ₹3,500" },
+  { value: "3500-4500", label: "₹3,500 - ₹4,500" },
+  { value: "4500-5500", label: "₹4,500 - ₹5,500" },
+  { value: "5500-9999", label: "₹5,500+" },
 ];
 
 export function FilterBar({ onFilterChange, initialFilters = {} }: FilterBarProps) {

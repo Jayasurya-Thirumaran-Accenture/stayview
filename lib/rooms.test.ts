@@ -50,8 +50,8 @@ describe("filterRooms", () => {
   });
 
   it("filters by price range", () => {
-    const rooms = filterRooms({ minPrice: 200, maxPrice: 400 });
-    expect(rooms.every((r) => r.pricePerNight >= 200 && r.pricePerNight <= 400)).toBe(true);
+    const rooms = filterRooms({ minPrice: 3500, maxPrice: 5000 });
+    expect(rooms.every((r) => r.pricePerNight >= 3500 && r.pricePerNight <= 5000)).toBe(true);
   });
 
   it("filters by guest count", () => {

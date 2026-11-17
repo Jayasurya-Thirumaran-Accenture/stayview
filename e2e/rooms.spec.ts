@@ -50,7 +50,7 @@ test.describe("Room Detail Page", () => {
   test("displays room information", async ({ page }) => {
     await page.goto("/rooms/harbor-view-king");
     await expect(page.getByRole("heading", { name: "Harbor View King" })).toBeVisible();
-    await expect(page.getByText("$289")).toBeVisible();
+    await expect(page.getByText("₹4,200")).toBeVisible();
   });
 
   test("shows 404 for invalid room", async ({ page }) => {

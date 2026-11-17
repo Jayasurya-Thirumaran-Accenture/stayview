@@ -2,12 +2,12 @@ import { describe, it, expect } from "vitest";
 import { formatCurrency, formatDate, pluralize, slugify } from "./format";
 
 describe("formatCurrency", () => {
-  it("formats USD amounts", () => {
-    expect(formatCurrency(289)).toBe("$289");
+  it("formats INR amounts", () => {
+    expect(formatCurrency(4200)).toBe("₹4,200");
   });
 
   it("formats large amounts with commas", () => {
-    expect(formatCurrency(1299)).toBe("$1,299");
+    expect(formatCurrency(6000)).toBe("₹6,000");
   });
 });
 

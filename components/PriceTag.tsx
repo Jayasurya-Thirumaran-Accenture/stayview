@@ -11,7 +11,7 @@ interface PriceTagProps {
 
 export function PriceTag({
   amount,
-  currency = "USD",
+  currency = "INR",
   period = "night",
   size = "md",
   className,

@@ -4,8 +4,8 @@ import { PriceTag } from "./PriceTag";
 
 describe("PriceTag", () => {
   it("renders formatted price", () => {
-    render(<PriceTag amount={289} />);
-    expect(screen.getByText("$289")).toBeInTheDocument();
+    render(<PriceTag amount={4200} />);
+    expect(screen.getByText("₹4,200")).toBeInTheDocument();
   });
 
   it("renders period text", () => {
